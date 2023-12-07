@@ -1,0 +1,60 @@
+@import 'Styles/base/_variables.scss';
+
+.navLink{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 250px;
+height: 46px;
+padding: 11px 15px 11px 11px;
+
+color:$secondary-text-color;
+border-radius: 8px;
+
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.14px;
+
+
+
+&:hover{
+    background-color: $hover-bgc;
+    color: $hover-text-color;
+}
+
+&:hover .navIconS,
+&:hover .navIconRightS{
+     stroke: currentColor;
+    fill:currentColor;
+}
+
+}
+
+
+.navLink {
+  margin-bottom: 18px;
+}
+
+.navLink:last-child {
+  margin-bottom: 0; 
+}
+
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.navIconS{
+    margin-right: 14px;
+    stroke: $icon-color;
+    fill:$icon-color;
+    
+}
+
+.navIconRightS{
+     stroke: $icon-color;
+
+}

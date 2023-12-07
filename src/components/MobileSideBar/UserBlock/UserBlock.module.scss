@@ -1,0 +1,28 @@
+.userImage{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-left: 11px;
+}
+
+.userBlockFlex{
+    display: flex;
+    margin-top: auto;
+    
+}
+
+.userName{
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.14px;
+}
+
+.userRole{
+color: #757575;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+}

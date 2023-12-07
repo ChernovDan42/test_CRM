@@ -1,0 +1,104 @@
+@import './utils/normalize';
+@import './utils/placeholders';
+@import './base/variables';
+@import './base//container';
+
+
+body {
+  margin: 0;
+  font-family:'Poppins',
+    sans-serif,-apple-system, BlinkMacSystemFont,;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+@media screen and (min-width: 1024px){
+  font-weight: 400px;
+}
+}
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  b{padding: 0;
+  margin: 0;}
+  
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+ 
+
+  button{
+    margin: 0;
+    padding: 0;
+  }
+
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  li{
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .active{
+background-color: $hover-bgc;
+color: $hover-text-color;
+  }
+
+.active .navIcon{
+  stroke: $hover-text-color;
+}
+
+.active .navIconRight{
+   stroke: $hover-text-color;
+}
+
+  .navIcon{
+    margin-right: 14px;
+    stroke: $icon-color;
+    fill:$icon-color;
+    
+}
+
+.navIconRight{
+     stroke: $icon-color;
+
+}
+
+
+ 
+
+  .closeMobileBtn{
+ transition: transform 0.3s ease-in-out
+  }
+
+
+.closeMobileBtn:hover {
+  transform: rotate(180deg);
+}

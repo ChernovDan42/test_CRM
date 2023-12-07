@@ -1,0 +1,24 @@
+@import 'Styles/base/_variables.scss';
+
+.menuContainer{
+    position: fixed;
+display: flex;
+flex-direction: column;
+   overflow-y: scroll;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 999;
+    background-color: #fff;
+    padding: 0px 16px 50px;
+
+    transition: transform 250ms $cubic-time-function;
+ 
+   &.isOpen{
+    transform: translateX(0);
+   }
+
+}
+
