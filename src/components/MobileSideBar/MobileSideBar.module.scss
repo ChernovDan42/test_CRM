@@ -14,7 +14,7 @@ flex-direction: column;
     background-color: #fff;
     padding: 0px 16px 50px;
 
-    transition: transform 250ms $cubic-time-function;
+    transition: transform 500ms $cubic-time-function;
  
    &.isOpen{
     transform: translateX(0);

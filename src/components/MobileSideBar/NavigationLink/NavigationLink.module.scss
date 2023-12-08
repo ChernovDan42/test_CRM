@@ -4,7 +4,7 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 250px;
+width: 100%;
 height: 46px;
 padding: 11px 15px 11px 11px;
 
@@ -16,15 +16,23 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: -0.14px;
 
+transition: background-color 150ms $cubic-time-function,color 150ms $cubic-time-function;
+
+@media screen and (min-width:426px) {
+  width: 250px;
+}
 
 
-&:hover{
+&:hover,
+&:focus{
     background-color: $hover-bgc;
     color: $hover-text-color;
 }
 
 &:hover .navIconS,
-&:hover .navIconRightS{
+&:hover .navIconRightS,
+&:focus .navIconS,
+&:focus .navIconRightS {
      stroke: currentColor;
     fill:currentColor;
 }

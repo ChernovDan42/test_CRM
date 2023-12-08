@@ -3,11 +3,11 @@ import { NavLink } from 'react-router-dom';
 import sprite from 'SVG/symbol-defs.svg';
 import clsx from 'clsx';
 
-export const NavigationLink = ({ title, link, svg }) => {
+export const NavigationLink = ({ title, link, svg, menuToggle }) => {
   const IsDashboardPage = link === '/';
 
   return (
-    <NavLink className={styles.navLink} to={link}>
+    <NavLink className={styles.navLink} to={link} onClick={menuToggle}>
       <div className={styles.flex}>
         <svg
           className={clsx('navIcon', styles.navIconS)}

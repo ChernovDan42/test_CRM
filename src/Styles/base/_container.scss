@@ -7,8 +7,8 @@
     
 
 
-    @media screen and (min-width: 428px){
-        max-width: 428px;
+    @media screen and (min-width: 425px){
+        max-width: 425px;
     }
 
     @media screen and (min-width: 768px){
@@ -17,10 +17,16 @@
 
 
 
-    @media screen and (min-width: 1158px){
-        max-width: 1158px;
+    @media screen and (min-width: 1024px){
+        max-width: 1024px;
         padding-left: 15px;
     padding-right: 15px;
+        
+     }
+
+      @media screen and (min-width: 1440px){
+        max-width: 1440px;
+        
         
      }
     }

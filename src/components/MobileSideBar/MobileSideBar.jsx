@@ -14,7 +14,7 @@ export const MobileSideBar = ({ menuToggle, isMenuOpen }) => {
     >
       <LogoBlock />
       <CloseBtn menuToggle={menuToggle} />
-      <MobileNavigation />
+      <MobileNavigation menuToggle={menuToggle} />
       <UserBlock />
     </div>
   );
