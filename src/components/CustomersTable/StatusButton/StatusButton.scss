@@ -1,0 +1,23 @@
+.status-btn{
+display: flex;
+width: 80px;
+padding: 4px 18px;
+justify-content: center;
+align-items: center;
+
+border-radius: 4px;
+
+}
+
+.active-btn{
+
+border: 1px solid #00B087;
+background-color: rgba(22, 192, 152, 0.38)
+}
+
+.disActive-btn{
+   
+border: 1px solid #DF0404;
+
+background-color: #FFC5C5;
+}

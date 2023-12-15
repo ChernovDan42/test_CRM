@@ -1,9 +1,7 @@
 import styles from './LogoBlock.module.scss';
 import sprite from 'SVG/symbol-defs.svg';
-// import { IoCloseSharp } from 'react-icons/io5';
-// import { IconContext } from 'react-icons';
 
-export const LogoBlock = ({ menuToggle }) => {
+export const LogoBlock = () => {
   return (
     <div className={styles.containerCenter}>
       <div className={styles.logoFlexContainer}>
@@ -14,7 +12,6 @@ export const LogoBlock = ({ menuToggle }) => {
           <h1 className={styles.logoText}>Dashboard</h1>
           <p className={styles.version}>v.01</p>
         </div>
-       
       </div>
     </div>
   );

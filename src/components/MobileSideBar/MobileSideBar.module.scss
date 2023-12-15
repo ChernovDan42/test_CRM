@@ -4,7 +4,7 @@
     position: fixed;
 display: flex;
 flex-direction: column;
-   overflow-y: scroll;
+   
     top: 0;
     left: 0;
     width: 100%;
@@ -18,6 +18,12 @@ flex-direction: column;
  
    &.isOpen{
     transform: translateX(0);
+   }
+
+
+
+   @media screen and (min-width:768px) {
+    width: 306px;
    }
 
 }

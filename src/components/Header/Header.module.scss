@@ -1,5 +1,9 @@
 .header{
     border-bottom: 1px solid black;
+
+    @media screen and (min-width:1440px) {
+        display: none;
+    }
 }
 
 .closeBtn{
@@ -36,8 +40,8 @@
 
 
 
-    @media screen and (min-width: 1158px){
-        max-width: 1158px;
+    @media screen and (min-width: 1024px){
+        max-width: 1024px;
        
         
      }

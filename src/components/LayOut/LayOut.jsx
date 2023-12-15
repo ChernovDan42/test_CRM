@@ -3,7 +3,6 @@ import { Suspense, useEffect } from 'react';
 import { MobileSideBar } from 'components/MobileSideBar/MobileSideBar';
 import { useState } from 'react';
 
-import styles from './LayOut.module.scss';
 import { Header } from 'components/Header/Header';
 
 export const LayOut = () => {
@@ -28,7 +27,8 @@ export const LayOut = () => {
 
   return (
     <>
-      {windowWidth <= 1023 && <Header menuToggle={menuToggle} />}
+      <Header menuToggle={menuToggle} />
+      {windowWidth >= 1440 && <MobileSideBar isMenuOpen={true} />}
 
       <main>
         <div className="container">
@@ -38,7 +38,7 @@ export const LayOut = () => {
         </div>
       </main>
 
-      {windowWidth <= 1023 && (
+      {windowWidth <= 1439 && (
         <MobileSideBar menuToggle={menuToggle} isMenuOpen={isMenuOpen} />
       )}
     </>
