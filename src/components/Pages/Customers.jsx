@@ -1,25 +1,15 @@
 import { FilterInput } from 'components/FilterInput/FilterInput';
 import { CustomersTable } from 'components/CustomersTable/CustomersTable';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useUserName } from 'components/context/nameContext';
 import clientsData from 'clients.json';
 import './Customers.scss';
 
 function Customers() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [clients, setClientsData] = useState(clientsData);
   const [filter, setFilter] = useState('');
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const { userName } = useUserName();
 
   const handleFilter = e => {
     setFilter(e.target.value);
@@ -33,12 +23,13 @@ function Customers() {
     } else if (client.country.toLowerCase().includes(filter.toLowerCase())) {
       return client;
     }
+    return false;
   });
 
   return (
     <>
       {/* {windowWidth >= 1440 && <MobileSideBar isMenuOpen={true} />} */}
-
+      <h1 className='greeting'>Hello {userName}👋🏼</h1>
       <div className="white-container">
         <div className="flex center">
           <div>
@@ -47,7 +38,7 @@ function Customers() {
           </div>
           <FilterInput handleFilter={handleFilter} />
         </div>
-        <CustomersTable clients={filteredClients} />
+        <CustomersTable clients={filteredClients} filter={filter} />
       </div>
     </>
   );

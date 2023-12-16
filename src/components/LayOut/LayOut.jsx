@@ -28,7 +28,11 @@ export const LayOut = () => {
   return (
     <>
       <Header menuToggle={menuToggle} />
-      {windowWidth >= 1440 && <MobileSideBar isMenuOpen={true} />}
+      {windowWidth >= 1440 && (
+        
+          <MobileSideBar isMenuOpen={true} />
+        
+      )}
 
       <main>
         <div className="container">

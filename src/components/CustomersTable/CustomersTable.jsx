@@ -1,14 +1,19 @@
-import clientsData from 'clients.json';
 import './CustomersTable.scss';
 import { StatusButton } from './StatusButton/StatusButton';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
-export function CustomersTable({ clients }) {
+export function CustomersTable({ clients, filter, changeStatus }) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
+  // Pagination & Range
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -50,7 +55,7 @@ export function CustomersTable({ clients }) {
               <td>{row.email}</td>
               <td>{row.country}</td>
               <td>
-                <StatusButton status={row.status.toString()} />
+                <StatusButton status={row.status} />
               </td>
             </tr>
           ))}
@@ -63,6 +68,7 @@ export function CustomersTable({ clients }) {
         <Stack spacing={2}>
           <Pagination
             count={totalPages}
+            page={currentPage}
             onChange={(e, value) => setCurrentPage(value)}
             variant="outlined"
             shape="rounded"

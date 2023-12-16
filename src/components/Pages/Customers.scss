@@ -5,3 +5,16 @@
 .title{
     margin-bottom: 7px;
 }
+
+.greeting{
+color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 41px;
+
+@media screen and (max-width:1439px) {
+    display: none;
+}
+}

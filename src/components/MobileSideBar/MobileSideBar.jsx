@@ -7,7 +7,7 @@ import { CloseBtn } from './CloseBtn/CloseBtn';
 
 export const MobileSideBar = ({ menuToggle, isMenuOpen }) => {
   return (
-    <div
+    <aside
       className={clsx(styles.menuContainer, {
         [styles.isOpen]: isMenuOpen,
       })}
@@ -16,6 +16,6 @@ export const MobileSideBar = ({ menuToggle, isMenuOpen }) => {
       <CloseBtn menuToggle={menuToggle} />
       <MobileNavigation menuToggle={menuToggle} />
       <UserBlock />
-    </div>
+    </aside>
   );
 };

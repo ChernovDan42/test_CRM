@@ -31,6 +31,9 @@ code {
 
 main{
   padding: 20px 0px;
+  @media screen and (min-width:1440px){
+    padding: 0px;
+  }
  
 }
 
