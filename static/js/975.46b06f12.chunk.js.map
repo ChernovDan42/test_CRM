@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/975.46b06f12.chunk.js","mappings":"2JAIA,UAJA,WACE,OAAOA,EAAAA,EAAAA,KAAA,MAAAC,SAAI,gBACb,C","sources":["components/Pages/Product.jsx"],"sourcesContent":["function Product() {\n  return <h1>Product page</h1>;\n}\n\nexport default Product;\n"],"names":["_jsx","children"],"sourceRoot":""}

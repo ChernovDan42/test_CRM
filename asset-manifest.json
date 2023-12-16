@@ -1,13 +1,35 @@
 {
   "files": {
-    "main.css": "/test_CRM/static/css/main.7acaea2f.css",
-    "main.js": "/test_CRM/static/js/main.07d3183d.js",
+    "main.css": "/test_CRM/static/css/main.3ff6c2ca.css",
+    "main.js": "/test_CRM/static/js/main.6389b7ea.js",
+    "static/js/366.ac957406.chunk.js": "/test_CRM/static/js/366.ac957406.chunk.js",
+    "static/js/975.46b06f12.chunk.js": "/test_CRM/static/js/975.46b06f12.chunk.js",
+    "static/css/383.f9451bc4.chunk.css": "/test_CRM/static/css/383.f9451bc4.chunk.css",
+    "static/js/383.6b08a4d3.chunk.js": "/test_CRM/static/js/383.6b08a4d3.chunk.js",
+    "static/js/595.3972b1d1.chunk.js": "/test_CRM/static/js/595.3972b1d1.chunk.js",
+    "static/js/217.b015e9d9.chunk.js": "/test_CRM/static/js/217.b015e9d9.chunk.js",
+    "static/js/312.5d168d9a.chunk.js": "/test_CRM/static/js/312.5d168d9a.chunk.js",
+    "static/js/725.73f807c0.chunk.js": "/test_CRM/static/js/725.73f807c0.chunk.js",
+    "static/media/IMG_0759.jpg": "/test_CRM/static/media/IMG_0759.aeaeefb01de430368fa6.jpg",
+    "static/media/symbol-defs.svg": "/test_CRM/static/media/symbol-defs.a9cf05362c9195ef4240281cda609c41.svg",
+    "static/media/slick.svg": "/test_CRM/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/test_CRM/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/test_CRM/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/test_CRM/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/test_CRM/index.html",
-    "main.7acaea2f.css.map": "/test_CRM/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/test_CRM/static/js/main.07d3183d.js.map"
+    "main.3ff6c2ca.css.map": "/test_CRM/static/css/main.3ff6c2ca.css.map",
+    "main.6389b7ea.js.map": "/test_CRM/static/js/main.6389b7ea.js.map",
+    "366.ac957406.chunk.js.map": "/test_CRM/static/js/366.ac957406.chunk.js.map",
+    "975.46b06f12.chunk.js.map": "/test_CRM/static/js/975.46b06f12.chunk.js.map",
+    "383.f9451bc4.chunk.css.map": "/test_CRM/static/css/383.f9451bc4.chunk.css.map",
+    "383.6b08a4d3.chunk.js.map": "/test_CRM/static/js/383.6b08a4d3.chunk.js.map",
+    "595.3972b1d1.chunk.js.map": "/test_CRM/static/js/595.3972b1d1.chunk.js.map",
+    "217.b015e9d9.chunk.js.map": "/test_CRM/static/js/217.b015e9d9.chunk.js.map",
+    "312.5d168d9a.chunk.js.map": "/test_CRM/static/js/312.5d168d9a.chunk.js.map",
+    "725.73f807c0.chunk.js.map": "/test_CRM/static/js/725.73f807c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.3ff6c2ca.css",
+    "static/js/main.6389b7ea.js"
   ]
 }
