@@ -6,8 +6,7 @@ import clientsData from 'clients.json';
 import './Customers.scss';
 
 function Customers() {
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [clients, setClientsData] = useState(clientsData);
+  const clients = clientsData;
   const [filter, setFilter] = useState('');
   const { userName } = useUserName();
 
@@ -28,8 +27,7 @@ function Customers() {
 
   return (
     <>
-      {/* {windowWidth >= 1440 && <MobileSideBar isMenuOpen={true} />} */}
-      <h1 className='greeting'>Hello {userName}👋🏼</h1>
+      <h1 className="greeting">Hello {userName} 👋🏼</h1>
       <div className="white-container">
         <div className="flex center">
           <div>

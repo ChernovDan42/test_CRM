@@ -1,7 +1,6 @@
 import { NavigationLink } from '../NavigationLink/NavigationLink';
 import sprite from 'SVG/symbol-defs.svg';
 import styles from './MobileNavigation.module.scss';
-import scss from '../NavigationLink/NavigationLink.module.scss';
 
 export const MobileNavigation = ({ menuToggle }) => {
   return (

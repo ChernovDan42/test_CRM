@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import sprite from 'SVG/symbol-defs.svg';
 import styles from './FilterInput.module.scss';
 

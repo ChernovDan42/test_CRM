@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
-export function CustomersTable({ clients, filter, changeStatus }) {
+export function CustomersTable({ clients, filter}) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
 
